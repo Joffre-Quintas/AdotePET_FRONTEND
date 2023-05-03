@@ -1,0 +1,29 @@
+@use '../../variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: variables.$tertiary-color;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.308);
+    position: fixed;
+    padding: 1rem;
+
+    &_loginIcon {
+        font-size: 1.6rem;
+        display: flex;
+        color: variables.$primary-color;
+    }
+    &_back {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: variables.$primary-color;
+    }
+}
+.headerGhost {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
