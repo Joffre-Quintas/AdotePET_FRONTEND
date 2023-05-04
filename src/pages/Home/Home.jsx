@@ -10,7 +10,7 @@ function Home() {
         <div className="container">
             <div className='container_bannerAdopt'>          
                 <p>Adote um PET e descubra o amor incondicional que só ele pode oferecer.</p>
-                <Link to='/register-pet'><img src={bannerAdopt} alt="Banner to Adopt" /></Link>
+                <img src={bannerAdopt} alt="Banner to Adopt" />
             </div>
             <div className='container_showAnimals'>
                 <h2>Amiguinhos disponíveis para adoção</h2>
@@ -28,11 +28,11 @@ function Home() {
                     <img src={imgTest} />
                 </div>
             </div>
-            <div className='container_bannerRegisterAnimal'>       
+            <Link to='/register-pet'><div className='container_bannerRegisterAnimal'>       
                 <p>ONG's , possui um animalzinho pronto para a adoção?</p>        
                 <p>Registre-o Aqui!</p>
                 <img src={bannerRegister} alt=" Banner Register Animal" />
-            </div>
+            </div></Link>
         </div>
     )
 }

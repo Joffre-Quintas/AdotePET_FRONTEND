@@ -22,7 +22,7 @@ function Header() {
         <>
             <header className='header'>
             <div className='header_back'>
-                {showBack ? <Back/> : null}
+                {showBack && <Back/>}
             </div>
 
                 <div className='header_logo'>LOGO</div>

@@ -1,0 +1,97 @@
+@use '../../variables';
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    & h2 {
+        color: variables.$primary-color;
+    }
+
+    & p{
+        color: variables.$tertiary-color;
+        font-size: .9rem;
+        font-style: italic;
+    }
+}
+.container > h2,p {
+    text-align: center;
+}
+.form_registerPET {
+    margin-top: 2rem;
+
+    & > *{
+        margin-bottom: 1rem;
+    }
+    & label {
+        font-size: .9rem;
+    }
+    & .label {
+        font-size: 1rem;
+        color: variables.$secondary-color;
+    }
+    
+    &_divInput {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 2rem 0;
+
+        & label {
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            transition: 0.3s all;
+        }
+        & input[type=text],& input[type=number] {
+            height: 2rem;
+            border: none;
+            padding: 4px 1rem;
+            border-radius: 16px;
+            
+            &:focus ~ label {
+                top: -1rem;
+                left: 0;
+            }
+            &:not(:placeholder-shown) ~ label {
+                top: -1rem;
+                left: 0;
+            }
+        }
+    }
+    &_divInputRadio {
+        margin-bottom: 8px;
+
+        & > * {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+    & .btnSubmit {
+        display: flex;
+        justify-content: center;
+
+        & input[type=submit] {
+            border: none;
+            padding: 8px 16px;
+            background-color: variables.$primary-color;
+            color: white;
+            border-radius: 8px;
+        }
+    } 
+}
+.agePET {
+    display: flex;
+    flex-direction: row;            
+    align-items: center;
+
+    & input {
+        width: 50%;
+        margin-right: .5rem;
+    }
+}
+#previewPicture {
+    max-width: 100%;
+    margin: auto;
+}
