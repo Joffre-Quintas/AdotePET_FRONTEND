@@ -1,8 +1,8 @@
 import './Home.scss';
 
-import bannerAdopt from '../../../public/img/bannersHome/bannerAdopt.jpg';
-import bannerRegister from '../../../public/img/bannersHome/bannerRegister.jpg';
-import imgTest from '../../../public/img/test/imgTeste.jpg';
+import bannerAdopt from '../../assets/img/bannersHome/bannerAdopt.jpg';
+import bannerRegister from '../../assets/img/bannersHome/bannerRegister.jpg';
+import imgTest from '../../assets/img/test/imgTeste.jpg';
 import { Link } from 'react-router-dom';
 
 function Home() {
